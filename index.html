@@ -1,50 +1,60 @@
-@{
+<!--@{
     ViewData["Title"] = "Home Page";
 }
+-->
 <!--
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
 -->
-<div>
-    <img class="main" src="~/img/building.jpg" alt="Contruction building site">
-</div>
+
+<img class="main" src="/images/CrimeScene.jpg" alt="Crime">
+
 <div class="center">
     <h1 style="text-align:center">Crime statistics in U.S.</h1>
     <p>
-        The Uniform Crime Reporting (UCR) Program generates reliable statistics for use in law enforcement. 
-        It also provides information for students of criminal justice, researchers, the media, and the public.
-        The program has been providing crime statistics since 1930.
-    </p>
-    <p>
-        The UCR Program includes data from more than 18,000 city, university and college, county, state, tribal, and federal law enforcement agencies. 
-        Agencies participate voluntarily and submit their crime data either through a state UCR program or directly to the FBI's UCR Program.
+        Crime in the United States has been recorded since colonization. Crime rates have varied over time, with a sharp rise after 1900, reaching a broad bulging peak between 
+		the 1970s and early 1990s. Since then, crime has declined significantly and remains moderate at best nationwide, with such crime rates continuing such a decline to this 
+		day. Since 1994 crime rates have steadily decreased, before rising up after 2015 until 2018. From 2018 to 2019, crime rates have recontinued at a steady decline. Statistics
+		on specific crimes are indexed in the annual Uniform Crime Reports by the Federal Bureau of Investigation (FBI) and by annual National Crime Victimization Surveys by the 
+		Bureau of Justice Statistics. In addition to the primary Uniform Crime Report known as Crime in the United States, the FBI publishes annual reports on the status of law 
+		enforcement in the United States. The report's definitions of specific crimes are considered standard by many American law enforcement agencies. According to the FBI, index
+		crime in the United States includes violent crime and property crime. Violent crime consists of five criminal offenses: murder and non-negligent manslaughter, rape, robbery,
+		aggravated assault, and gang violence; property crime consists of burglary, larceny, motor vehicle theft, and arson.
     </p>
     <h3 style="text-align:center">Purpose of this Site</h3>
     <p>
-        While this information is freely available for anyone to see through open-source libraries, the data is often presented in
-        different time and value formats that make trend-analysis not easy to digest. The purpose of this site is to provide 
-        This information can be digested at a macro level, by seeing
-        <a asp-controller="Home" asp-action="Graphs">Visualize</a> or easily dragged into a comparison to analyze raw numbers at a yearly level, see <a asp-controller="Home" asp-action="Reports">Years</a> and save some years.
-    </p>
-    <p>
-        The data collected for this site contains all years from 2009 to 2019, and has been categorized and cataloged into a functional <a asp-controller="Home" asp-action="AboutUs">Data Model</a>
-        to enable future functionality and displays.
-        
+		Since 1930, the FBI has been collecting data on the types, amounts, and impact of crime in the United States through the Uniform Crime Reporting Program. This program is 
+		the most reliable source of crime statistics for law enforcement administration, operation, and management. It is also used by researchers, politicians, and criminal 
+		justice professionals to gain a deeper understanding of crime and society. The purpose of this site is to get a closer look at how crime statistics are used and why 
+		they are important.
     </p>
     <p>
 </div>
-<div class="main">
-    <hr>
-    <img class="cont" src="~/img/newHomeConstruction.jpg" alt="Residential Spending">
+<hr>
+<img class="main" src="PropertyCrime.jpg" alt="Crime">
+
     <div class="content right">
         <h2>U.S. Homicide crime statistics</h2>
         <p>
-            Point 1
+			In the United States, the law for murder varies by jurisdiction. In most US jurisdictions there is a hierarchy of acts, known collectively as homicide,
+			of which first-degree murder and felony murder are the most serious, followed by second-degree murder, followed by voluntary manslaughter and involuntary 
+			manslaughter which are not as serious, and ending finally in justifiable homicide, which is not a crime. However, because there are at least 52 relevant 
+			jurisdictions, each with its own criminal code, this is a considerable simplification.Sentencing also varies widely depending upon the specific murder charge. 
+			"Life imprisonment" is a common penalty for first-degree murder, but its meaning varies widely. Capital punishment is a legal sentence in 28 states, 
+			and in the federal civilian and military legal systems. The United States is unusual in actually performing executions, with 34 states having performed 
+			executions since capital punishment was reinstated in 1976. The methods of execution have varied, but the most common method since 1976 has been lethal injection.
+			In 2019 a total of 22 people were executed, and 2,652 people were on death row.
         </p>
         <p>
-            Point 2
+            According to a 2013 reports, between 2005 and 2012, the average homicide rate in the U.S. was 4.9 per 100,000 inhabitants compared to the average rate globally,
+			which was 6.2. However, the U.S. had much higher murder rates compared to other developed countries, which all had average homicide rates of 0.8 per 100,000.
+			In 2004, there were 5.5 homicides for every 100,000 persons, roughly three times as high as Canada (1.9) and six times as high as Germany and Italy (0.9).
+			A closer look at The National Archive of Criminal Justice Data indicates that per capita homicide rates over the last 30 plus years on average, of major cities, 
+			New Orleans' average annual per capita homicide rate of 52 murders per 100,000 people overall (1980–2012) is the highest of U.S. cities with average annual homicide 
+			totals that were among the top 10 highest during the same period.
+			In 2018, the US murder rate was 5.0 per 100,000, for a total of 15,498 murders.
         </p>
         <!--<p>Spending Estimates Include Costs in Construction related to:</p>
         <ul>
@@ -53,26 +63,42 @@
             <li>Architectural & Enginnering Surveys</li>
             <li>Overhead, Taxes, Interest & Profit</li>
         </ul>-->
-        <p>Data Source: <a href="https://www.census.gov/construction/c30/c30index.html" title="Homicide Data" target="_blank">U.S. Homicide crime statistics</a></p>
-        <p>
-            To enhance the visibility of this information in comparison to the total inventory of vacant and occupied housing units,
-            we have transformed these values into quarterly values.
-        </p>
+        <p>Data Source: <a href="https://crime-data-explorer.fr.cloud.gov/explorer/national/united-states/crime#"title="Homicide Data" target="_blank">U.S. Homicide crime statistics</a></p>
+        
 
     </div>
 </div>
+
 <div class="main">
     <hr>
-    <img class="cont" src="~/img/housingInventory.jpg" alt="Housing Inventory">
+    <img class="cont" src="arrest.jpg" alt="Housing Inventory">
     <div class="content right">
         <h2>Property Crime Data</h2>
         <p>
-            Point 1
+            Property crime is a category of crime, usually involving private property, that includes, among other crimes, burglary, larceny, theft, motor vehicle theft, arson, 
+			shoplifting, and vandalism. Property crime is a crime to obtain money, property, or some other benefit. This may involve force, or the threat of force, in cases like 
+			robbery or extortion. Since these crimes are committed in order to enrich the perpetrator they are considered property crimes. Crimes against property are divided into
+			two groups: destroyed property and stolen property. When property is destroyed, it could be called arson or vandalism. Examples of the act of stealing property is 
+			robbery or embezzlement.Property crimes are high-volume crimes, with cash, electronics (e.g. televisions), power tools, cameras, and jewelry often targeted.
+			"Hot products" tend to be items that are concealable, removable, available, valuable, and enjoyable, with an ease of "disposal" being the most important characteristic.
         </p>
-        <ol>
-            <li>Occupied Units</li>
-            <li>Vacant Units</li>
-        </ol>
+		<p>
+            In 2019, there were 3,007,739 property crime incidents, and 3,022,701 offenses reported by the United States by 8,536 law enforcement agencies that submitted incident-based 
+			(NIBRS) glossary lookup data, and covers 44% of the total population. For the third consecutive year, the estimated number of violent crimes in the nation decreased 
+			when compared with the previous year’s statistics, according to FBI figures released on September 28. In 2019, violent crime was down 0.5% from the 2018 number. 
+			Property crimes also dropped 4.1%, marking the 17th consecutive year the collective estimates for these offenses declined. The 2019 statistics show the estimated rate 
+			of violent crime was 366.7 offenses per 100,000 inhabitants, and the estimated rate of property crime was 2,109.9 offenses per 100,000 inhabitants. 
+			The violent crime rate fell 1.0% when compared with the 2018 rate; the property crime rate declined 4.5%.
+		</p>
+		<p>
+			The crime against property has been divided in four categories -
+        <ul>
+            <li>Burglary</li>
+            <li>Robbery</li>
+			<li>Motor Vehicle Theft</li>
+            <li>Larceny</li>
+        </ul>
+		</p>
         <!--<p>A housing unit is considered to be any of the following: </p>
         <ul>
             <li>House</li>
@@ -82,22 +108,37 @@
         </ul>-->
         <p>
         </p>
-        <p>Data Source: <a href="https://www.census.gov/housing/hvs/index.html" title="Property Data" target="_blank">Property Crime Data</a></p>
+        <p>Data Source: <a href="https://crime-data-explorer.fr.cloud.gov/explorer/national/united-states/supp" title="Property Data" target="_blank">Property Crime Data</a></p>
     </div>
 </div>
 
 <div class="main">
     <hr>
-    <img class="cont" src="~/img/housingInventory.jpg" alt="Housing Inventory">
+    <img class="cont" src="arrest.jpg" alt="Housing Inventory">
     <div class="content right">
         <h2>Arrest data</h2>
         <p>
-            Point 1
+			The UCR Program collects information on crimes reported by law enforcement agencies regarding the violent crimes of murder and nonnegligent manslaughter, rape, robbery,
+			and aggravated assault, as well as the property crimes of burglary, larceny-theft, motor vehicle theft, and arson. (The FBI classifies arson as a property crime but 
+			does not estimate arson data because of variations in the level of participation by the reporting agencies. Consequently, arson data is not included in the property 
+			crime estimate.) The program also collects arrest data for the offenses listed above and 20 offenses that include all other crimes except traffic violations.
+            
         </p>
-        <ol>
-            <li>Occupied Units</li>
-            <li>Vacant Units</li>
-        </ol>
+		<p>
+			For the third consecutive year, the estimated number of violent crimes in the nation decreased when compared with the previous year’s statistics, according to FBI figures 
+			released today. In 2019, violent crime was down 0.5% from the 2018 number. Property crimes also dropped 4.1%, marking the 17th consecutive year the collective estimates for 
+			these offenses declined. The 2019 statistics show the estimated rate of violent crime was 366.7 offenses per 100,000 inhabitants, and the estimated rate of property crime 
+			was 2,109.9 offenses per 100,000 inhabitants. The violent crime rate fell 1.0% when compared with the 2018 rate; the property crime rate declined 4.5%.
+        </p>
+		<p>
+		Expanded data about arrests include following information about the arrestees -
+        <ul>
+            <li>Age</li>
+            <li>Gender</li>
+			<li>Race</li>
+            <li>Ethnicity</li>
+        </ul>
+       </p>
         <!--<p>A housing unit is considered to be any of the following: </p>
         <ul>
             <li>House</li>
@@ -107,6 +148,6 @@
         </ul>-->
         <p>
         </p>
-        <p>Data Source: <a href="https://www.census.gov/housing/hvs/index.html" title="Arrest Data" target="_blank">>Arrest data</a></p>
+        <p>Data Source: <a href="https://crime-data-explorer.fr.cloud.gov/explorer/national/united-states/arrest" title="Arrest Data" target="_blank">Arrest data</a></p>
     </div>
 </div>
