@@ -1,14 +1,7 @@
-/**
- * Your JS code here
- */
+const menu = document.querySelector('#mobile-menu')
+const menuLinks = document.querySelector('.navbar__menu')
 
-/**
- * Sample code
- */
-document.addEventListener('DOMContentLoaded', function() {
-  var ulElement = document.getElementById('links');
-  var liElement = document.createElement('li');
-  liElement.appendChild(document.createTextNode('created by main.js'));
-
-  ulElement.appendChild(liElement);
+menu.addEventListener('click', function(){
+    menu.classList.toggle('is-active');
+    menuLinks.classList.toggle('active');
 });
