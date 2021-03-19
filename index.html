@@ -1,1 +1,112 @@
-<!--Your HTML code here-->
+@{
+    ViewData["Title"] = "Home Page";
+}
+<!--
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+-->
+<div>
+    <img class="main" src="~/img/building.jpg" alt="Contruction building site">
+</div>
+<div class="center">
+    <h1 style="text-align:center">Crime statistics in U.S.</h1>
+    <p>
+        The Uniform Crime Reporting (UCR) Program generates reliable statistics for use in law enforcement. 
+        It also provides information for students of criminal justice, researchers, the media, and the public.
+        The program has been providing crime statistics since 1930.
+    </p>
+    <p>
+        The UCR Program includes data from more than 18,000 city, university and college, county, state, tribal, and federal law enforcement agencies. 
+        Agencies participate voluntarily and submit their crime data either through a state UCR program or directly to the FBI's UCR Program.
+    </p>
+    <h3 style="text-align:center">Purpose of this Site</h3>
+    <p>
+        While this information is freely available for anyone to see through open-source libraries, the data is often presented in
+        different time and value formats that make trend-analysis not easy to digest. The purpose of this site is to provide 
+        This information can be digested at a macro level, by seeing
+        <a asp-controller="Home" asp-action="Graphs">Visualize</a> or easily dragged into a comparison to analyze raw numbers at a yearly level, see <a asp-controller="Home" asp-action="Reports">Years</a> and save some years.
+    </p>
+    <p>
+        The data collected for this site contains all years from 2009 to 2019, and has been categorized and cataloged into a functional <a asp-controller="Home" asp-action="AboutUs">Data Model</a>
+        to enable future functionality and displays.
+        
+    </p>
+    <p>
+</div>
+<div class="main">
+    <hr>
+    <img class="cont" src="~/img/newHomeConstruction.jpg" alt="Residential Spending">
+    <div class="content right">
+        <h2>U.S. Homicide crime statistics</h2>
+        <p>
+            Point 1
+        </p>
+        <p>
+            Point 2
+        </p>
+        <!--<p>Spending Estimates Include Costs in Construction related to:</p>
+        <ul>
+            <li>Labor</li>
+            <li>Material</li>
+            <li>Architectural & Enginnering Surveys</li>
+            <li>Overhead, Taxes, Interest & Profit</li>
+        </ul>-->
+        <p>Data Source: <a href="https://www.census.gov/construction/c30/c30index.html" title="Homicide Data" target="_blank">U.S. Homicide crime statistics</a></p>
+        <p>
+            To enhance the visibility of this information in comparison to the total inventory of vacant and occupied housing units,
+            we have transformed these values into quarterly values.
+        </p>
+
+    </div>
+</div>
+<div class="main">
+    <hr>
+    <img class="cont" src="~/img/housingInventory.jpg" alt="Housing Inventory">
+    <div class="content right">
+        <h2>Property Crime Data</h2>
+        <p>
+            Point 1
+        </p>
+        <ol>
+            <li>Occupied Units</li>
+            <li>Vacant Units</li>
+        </ol>
+        <!--<p>A housing unit is considered to be any of the following: </p>
+        <ul>
+            <li>House</li>
+            <li>Apartment</li>
+            <li>Group of Rooms</li>
+            <li>Separate Living Quarters with a Single Occupancy</li>
+        </ul>-->
+        <p>
+        </p>
+        <p>Data Source: <a href="https://www.census.gov/housing/hvs/index.html" title="Property Data" target="_blank">Property Crime Data</a></p>
+    </div>
+</div>
+
+<div class="main">
+    <hr>
+    <img class="cont" src="~/img/housingInventory.jpg" alt="Housing Inventory">
+    <div class="content right">
+        <h2>Arrest data</h2>
+        <p>
+            Point 1
+        </p>
+        <ol>
+            <li>Occupied Units</li>
+            <li>Vacant Units</li>
+        </ol>
+        <!--<p>A housing unit is considered to be any of the following: </p>
+        <ul>
+            <li>House</li>
+            <li>Apartment</li>
+            <li>Group of Rooms</li>
+            <li>Separate Living Quarters with a Single Occupancy</li>
+        </ul>-->
+        <p>
+        </p>
+        <p>Data Source: <a href="https://www.census.gov/housing/hvs/index.html" title="Arrest Data" target="_blank">>Arrest data</a></p>
+    </div>
+</div>
